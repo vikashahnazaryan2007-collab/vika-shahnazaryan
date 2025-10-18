@@ -1,0 +1,37 @@
+body {
+       height:100%; font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+       color:#eee; background:#b4b0b0;
+}
+.container {width:94%; max-width:1100px; margin:0 auto; padding:1rem 0;}
+.site-header {background:#7c7b7b; border-bottom:1px solid rgba(236, 24, 24, 0.05);}
+.header-inner {display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:0.75rem 0;}
+.logo a {color:#fff; text-decoration:none; font-weight:700; font-size:1.1rem;}
+.main-nav a {color:#fcf7f7; text-decoration:none; margin-left:1rem;}
+.main-nav.open {display:block;}
+.nav-toggle {display:none; background:transparent; border:none; color:#fff; font-size:1.25rem;}
+
+.grid {display:grid; gap:1rem; margin:1.25rem 0;}
+
+.card {background:linear-gradient(180deg, rgba(241, 25, 25, 0.02), rgba(255,255,255,0.01)); padding:1rem; border-radius:8px; border:1px solid rgba(255,255,255,0.03);}
+.card h2 {margin-bottom:0.5rem; color:#fff;}
+.intro {margin:1.5rem 0; padding:1rem;}
+
+  background-color
+.site-footer {background:#585757; border-top:1px solid rgb(65, 62, 62); padding:1rem 0; margin-top:2rem;}
+.site-footer p {color:#585555; font-size:0.95rem;}
+.contact-form {display:grid; gap:0.75rem; max-width:680px;}
+.contact-form label {display:block; color:#ddd; font-size:0.95rem;}
+.contact-form input, .contact-form textarea {
+  width:100%; padding:0.6rem; border-radius:6px; border:1px solid rgba(65, 62, 62, 0);
+  background:#121212; color:#fff;
+}
+.form-actions {margin-top:0.5rem;}
+.form-actions button {padding:0.6rem 1rem; border-radius:6px; border:none; cursor:pointer; background:#2b9cff; color:#fff;}
+
+.team {
+  padding: 100px 100px;
+  background-color: #726e6e;
+  text-align: center;
+}
+
+

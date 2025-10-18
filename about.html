@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+      <title>Գլխավոր — Բնական և օգտակար ապրանքներ</title>
+      <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+      <header class="site-header">
+      <div class="container header-inner">
+      <h1 class="logo"><a href="index.html">MySite</a></h1>
+      <nav class="main-nav" aria-label="առաջին նավիգացիա">
+      <a href="index.html">Գլխավոր</a>
+      <a href="about.html">Մեր Մասին</a>
+      <a href="contact.html">Կապ</a>
+    <a href="our team.html">Մեր թիմը</a>
+</nav>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false">☰</button>
+</div>
+</header>
+      <main class="container">
+    <section class="grid">
+      <article class="card">
+        <h2>Ինչպես պահպանել էներգիան աշնանը</h2>
+        <p>Աշնանային եղանակին կարևոր է ճիշտ սնվել և պահպանել բալանսը։</p>
+      </article>
+      <article class="card">
+        <h2>Մեր   Ծառայություններ</h2>
+        <p>Մարզական ծրագրեր</p>
+      </article>
+      <article class="card">
+        <h2>Առողջապահական խորհրդատվություն</h2>
+        <p>Մեր մասնագետները կօգնեն ձեզ ընտրել ճիշտ սննդակարգ և ապրել առողջ կյանք</p>
+      </article>
+         <article class="card">
+        <h2>Քայլարշավներ բնության գրկում</h2>
+        <p>Թարմ օդ, բնություն և դրական էներգիա՝ ապրելակերպի լավագույն ուղին </p>
+      </article>
+    </section>
+    <section class="intro">
+      <h2>Բարի գալուստ մեր էջ</h2>
+      <p>Երջանիկ ենք, որ այցելեցիք։</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MySite — Բոլոր իրավունքները պաշտպանված են</p>
+      <nav class="footer-nav" aria-label="footer navigation">
+        <a href="index.html">Գլխավոր</a> |
+        <a href="about.html">Մեր Մասին</a> |
+        <a href="contact.html">Կապ</a>
+      </nav>
+    </div>
+  </footer>
+ <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
